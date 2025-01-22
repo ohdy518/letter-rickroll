@@ -1,6 +1,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Letter from ohdy</title>
+<title>Letter from {d_from}</title>
 <script>
     import { page } from "\$app/state";
 
