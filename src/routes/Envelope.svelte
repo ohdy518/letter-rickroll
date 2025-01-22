@@ -1,4 +1,6 @@
 <script>
+    import {browser} from "$app/environment";
+
     /** @type {string} */
     export let letter_from
     /** @type {string} */
@@ -40,6 +42,8 @@
             }
             // letterDiv.hidden = true
             video.hidden = false
+            video.play()
+            // video.muted = false
         }, 3000)
     }
 
@@ -55,7 +59,7 @@
     <div id="letter-container">
         <div id="letter" class="letter-div" hidden>
             <span id="fetching" class="godoM font-letter letter-fetching-pos text-center">Fetching...</span>
-            <video id="the-video" width="673" autoplay hidden>
+            <video id="the-video" width="673" hidden>
                 <source src="./video.mp4" type="video/mp4" />
                 <track kind="captions" src="">
             </video>

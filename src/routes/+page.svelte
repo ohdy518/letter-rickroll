@@ -1,3 +1,4 @@
+<title>Letter from ohdy</title>
 <script>
     import Header from "./Header.svelte";
     import Envelope from "./Envelope.svelte";
