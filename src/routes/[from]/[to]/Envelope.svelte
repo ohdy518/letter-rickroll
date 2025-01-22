@@ -51,16 +51,16 @@
 
 <div class="w-fit relative">
     <div id="envelope">
-        <img src="blank-envelope.png" alt="" width="673" class="static"/>
+        <img src="/resources/blank-envelope.png" alt="" width="673" class="static"/>
         <span class="godoM font-letter pos-envelope-sender">From {letter_from}</span>
-        <span class="godoM font-letter pos-envelope-recipient text-blur">To {to}</span>
+        <span class="godoM font-letter pos-envelope-recipient text-blur text-center min-w-48 max-w-48">To {to}</span>
         <button on:click={()=>{openEnvelope()}} class="godoM font-def pos-envelope-button underline">Open it!</button>
     </div>
     <div id="letter-container">
         <div id="letter" class="letter-div" hidden>
             <span id="fetching" class="godoM font-letter letter-fetching-pos text-center">Fetching...</span>
             <video id="the-video" width="673" hidden>
-                <source src="./video.mp4" type="video/mp4" />
+                <source src="/resources/video.mp4" type="video/mp4" />
                 <track kind="captions" src="">
             </video>
         </div>
