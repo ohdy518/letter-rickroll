@@ -1,6 +1,6 @@
-<script>
-    import {browser} from "$app/environment";
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<script>
     /** @type {string} */
     export let letter_from
     /** @type {string} */
@@ -51,7 +51,7 @@
 
 <div class="w-fit relative">
     <div id="envelope">
-        <img src="/resources/blank-envelope.png" alt="" width="673" class="static"/>
+        <img src="/resources/blank-envelope.png" alt="" class="static media-size"/>
         <span class="godoM font-letter pos-envelope-sender">From {letter_from}</span>
         <span class="godoM font-letter pos-envelope-recipient text-blur text-center min-w-48 max-w-48">To {to}</span>
         <button on:click={()=>{openEnvelope()}} class="godoM font-def pos-envelope-button underline">Open it!</button>
@@ -59,7 +59,7 @@
     <div id="letter-container">
         <div id="letter" class="letter-div" hidden>
             <span id="fetching" class="godoM font-letter letter-fetching-pos text-center">Fetching...</span>
-            <video id="the-video" width="673" hidden>
+            <video id="the-video" class="media-size" hidden>
                 <source src="/resources/video.mp4" type="video/mp4" />
                 <track kind="captions" src="">
             </video>

@@ -9,18 +9,23 @@
     font-style: normal;
 }
 
+.media-size {
+    width: 300px;
+}
+
 .godoM {
     font-family: 'godoMaum', "Comic Sans MS", sans-serif;
 }
 
 .font-def {
-    font-size: 63px;
+    font-size: 36px;
 }
 
 .font-letter {
-    font-size: 42px;
+    font-size: 24px;
     color: rgb(68, 68, 68)
 }
+
 
 .debug {
     border: red 1px inset;
@@ -28,27 +33,27 @@
 
 .pos-envelope-sender {
     position: absolute;
-    top: 73px;
-    left: 125px;
+    top: 28px;
+    left: 55px;
 }
 
 .pos-envelope-recipient {
     position: absolute;
-    top: 285px;
-    left: 369px;
+    top: 125px;
+    left: 113px;
 }
 
 .pos-envelope-button {
     position: absolute;
-    top: 46%;
+    top: 44%;
     left: 48%;
     transform: translate(-50%, -50%);
 }
 
 .letter-div {
     background-color: rgb(255, 248, 237);
-    width: 673px;
-    height: 951px;
+    width: 300px;
+    height: 424px;
     box-shadow: 0 0 8px #00000029;
 }
 
@@ -80,7 +85,7 @@
 }
 
 .letter-standby {
-    width: 673px;
+    width: 300px;
     animation: color-size-change 1s;
     animation-fill-mode: forwards;
 }
@@ -88,13 +93,69 @@
 @keyframes color-size-change {
     from {
         background-color: rgb(255, 248, 237);
-        height: 951px;
+        height: 424px;
         box-shadow: 0 0 8px #00000029;
         animation-timing-function: ease-in-out;
     }
     to {
         background-color: #e1e1ff;
-        height: 505px;
+        height: 225px;
         box-shadow: 0 0 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .font-def {
+        font-size: 63px;
+    }
+
+    .font-letter {
+        font-size: 42px;
+    }
+
+    .media-size {
+        width: 673px;
+    }
+
+    .pos-envelope-sender {
+        position: absolute;
+        top: 73px;
+        left: 125px;
+    }
+
+    .pos-envelope-recipient {
+        position: absolute;
+        top: 285px;
+        left: 369px;
+    }
+
+    .pos-envelope-button {
+        position: absolute;
+        top: 46%;
+        left: 48%;
+        transform: translate(-50%, -50%);
+    }
+
+    .letter-standby {
+        width: 673px;
+    }
+
+    .letter-div {
+        width: 673px;
+        height: 951px;
+    }
+
+    @keyframes color-size-change {
+        from {
+            background-color: rgb(255, 248, 237);
+            height: 951px;
+            box-shadow: 0 0 8px #00000029;
+            animation-timing-function: ease-in-out;
+        }
+        to {
+            background-color: #e1e1ff;
+            height: 505px;
+            box-shadow: 0 0 0;
+        }
     }
 }
