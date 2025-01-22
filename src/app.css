@@ -26,26 +26,75 @@
     border: red 1px inset;
 }
 
-.pos-letter-sender {
+.pos-envelope-sender {
     position: absolute;
     top: 73px;
     left: 125px;
 }
 
-.pos-letter-recipient {
+.pos-envelope-recipient {
     position: absolute;
     top: 285px;
     left: 417px;
 }
 
-.pos-letter-button {
+.pos-envelope-button {
     position: absolute;
     top: 46%;
     left: 48%;
     transform: translate(-50%, -50%);
 }
 
+.letter-div {
+    background-color: rgb(255, 248, 237);
+    width: 673px;
+    height: 951px;
+    box-shadow: 0 0 8px #00000029;
+}
+
+.letter-fetching-pos {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .text-blur {
     color: transparent;
     text-shadow: 0 0 1px rgba(68, 68, 68, 0.8);
+}
+
+.fade-out-text {
+    animation: fade-out 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+        animation-timing-function: ease-in-out;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.letter-standby {
+    width: 673px;
+    animation: color-size-change 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes color-size-change {
+    from {
+        background-color: rgb(255, 248, 237);
+        height: 951px;
+        box-shadow: 0 0 8px #00000029;
+        animation-timing-function: ease-in-out;
+    }
+    to {
+        background-color: #e1e1ff;
+        height: 505px;
+        box-shadow: 0 0 0;
+    }
 }
