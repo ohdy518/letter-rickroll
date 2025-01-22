@@ -1,3 +1,51 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@font-face {
+    font-family: 'godoMaum';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/godoMaum.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.godoM {
+    font-family: 'godoMaum', "Comic Sans MS", sans-serif;
+}
+
+.font-def {
+    font-size: 63px;
+}
+
+.font-letter {
+    font-size: 42px;
+    color: rgb(68, 68, 68)
+}
+
+.debug {
+    border: red 1px inset;
+}
+
+.pos-letter-sender {
+    position: absolute;
+    top: 73px;
+    left: 125px;
+}
+
+.pos-letter-recipient {
+    position: absolute;
+    top: 285px;
+    left: 417px;
+}
+
+.pos-letter-button {
+    position: absolute;
+    top: 46%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+
+.text-blur {
+    color: transparent;
+    text-shadow: 0 0 1px rgba(68, 68, 68, 0.8);
+}
